@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css"/>
+
+    <title>Stop Watch</title>
+</head>
+<body>
+ 
+    <div class="container">
+        <div class="hour">00
+          <div class="tooltip">hr</div>
+        </div> : 
+ 
+        <div class="minute">00
+         <div class="tooltip">min</div>
+        </div> : 
+ 
+        <div class="seconds">00
+         <div class="tooltip">sec</div>
+        </div> .
+ 
+        <div class="mili-secs">00</div>
+     </div>
+    
+    <div class="command">
+        <button class="play-button buttons" id="play"><i class="material-icons" style="font-size:20px;color:white">play_arrow</i></button>
+        <button class="mark-button buttons" id="mark"><i class="fa fa-flag-o" style="font-size:20px"></i></button>
+        <button class="reset-button buttons" id="reset"><i class="material-icons" style="font-size:20px">replay</i></button>
+    </div>
+    
+    <div class="marked">
+        <div class="marked-header">
+            <div class="header-item">Lap</div>
+            <div class="header-item">Time</div>
+            <div class="header-item">Total</div>
+        </div>
+        <hr>
+        <div class="record">
+            <div class="all-records">
+                <!-- Lap records will be dynamically added here -->
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <a href="https://github.com/Kaizouku14" target="_blank"><ion-icon name="logo-github"></ion-icon></a>
+        <a href="https://www.facebook.com/alv.manda.3" target="_blank"><ion-icon name="logo-facebook"></ion-icon></a>
+        <a href="https://www.instagram.com/zyalv.m/" target="_blank"><ion-icon name="logo-instagram"></ion-icon></ion-icon></a>
+    </div>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    
+    <script src="script.js"></script>
+</body>
+</html>
