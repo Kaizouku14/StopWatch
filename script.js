@@ -110,6 +110,7 @@ function updateRecord() {
         }
     });
 
+    if(lapTimes.length > 1){
     if (fastestIndex !== -1) {
         recordContainer.children[fastestIndex].classList.add('fastest-lap');
     }
@@ -117,6 +118,7 @@ function updateRecord() {
     if (slowestIndex !== -1) {
         recordContainer.children[slowestIndex].classList.add('slowest-lap');
     }
+  }
 }
 
 function formatTime(time) {
