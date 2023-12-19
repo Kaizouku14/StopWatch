@@ -58,7 +58,7 @@ function updateDisplay() {
     let hours = Math.floor(elapsedTime / (60 * 60 * 1000));
     let minutes = Math.floor((elapsedTime % (60 * 60 * 1000)) / (60 * 1000));
     let seconds = Math.floor((elapsedTime % (60 * 1000)) / 1000);
-    let milliseconds = (elapsedTime % 1000).toString().padStart(3, '0');
+    let milliseconds = (elapsedTime % 1000).toString().padStart(2, '0');
 
     let htmlContent = `
         <div class="hour">${String(hours).padStart(2, '0')}<div class="tooltip">hr</div></div>:  
