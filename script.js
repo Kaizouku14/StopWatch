@@ -88,15 +88,15 @@ function updateRecord() {
         lapNumber.innerText = index + 1;
 
         const lapTimeDisplay = document.createElement('div');
-        lapTimeDisplay.innerText = formatTime(lapTime);
+        lapTimeDisplay.innerText = formatTime(calculateTotalTime(index));
 
         const totalDisplay = document.createElement('div');
-        totalDisplay.innerText = formatTime(calculateTotalTime(index));
+        totalDisplay.innerText = formatTime(lapTime); 
 
         lapRecord.appendChild(lapNumber);
         lapRecord.appendChild(lapTimeDisplay);
         lapRecord.appendChild(totalDisplay);
-
+     
         recordContainer.appendChild(lapRecord);
 
         if (lapTime < fastestTime) {
